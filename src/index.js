@@ -77,3 +77,35 @@ a = 'a';
 console.log(a);
 
 // clase 3 Arrow Functions, Promesas y Parámetros en objetos
+//parametros en objetos
+let name = 'oscar';
+let age = 32;
+//es5
+obj = {name: name, age: age};
+//es6
+obj2 = {name,age};
+console.log(obj2);
+
+// arrow funtions
+const names = [
+    {name: 'Oscar', age: 32},
+    {name: 'Yesica', age: 27}
+];
+//es5
+let listOfNames = names.map(function (item){
+    console.log(item.name);
+})
+//es6
+let listOfNames2 = names.map(item => console.log(item.name)) 
+
+const listOfNames3 = (name, age, country) => {
+    ...
+}
+
+const listOfNames4 = name =>{
+    ...
+}
+
+const square = num => num * num;
+
+//promesas
